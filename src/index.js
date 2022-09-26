@@ -1,6 +1,10 @@
-import React from 'react';
-import ReactDOM  from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<h1>Hello world!!</h1>);
+root.render(
+  <div>
+    <h1>Hello !!</h1>,<h1>Welcome to My world!!</h1>,
+  </div>
+);
