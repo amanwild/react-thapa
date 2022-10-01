@@ -12,58 +12,90 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-h1{
-  /* justify-content: center;
-  align-items: center; */
-  width: 50%;
+.card{
+  border: 10px solid blueviolet;
+  border-radius: 20px;
   margin: auto;
   margin-top: 20px;
-  display: inline-block;
-  height: auto;
+  box-shadow: 1px 1px 15px rgb(56, 23, 87);
+  height: 800px;
+  width: 800px;
+  background-color: rgb(148, 63, 227);
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  align-items: center;
+  width: auto;
+  margin: auto;  
+  margin-top: 20px;
+  background-color: rgb(103, 30, 171);
   font-size: 40px;
   /* padding-top: 10px; */
   color: white;
   text-align: center;
-  border: 10px solid blueviolet;
-  border-radius: 20px;
-  margin: 10px;
-
-  background-color: rgb(148, 63, 227);
+  
 }
-input{
-  /* justify-content: center;
-  align-items: center; */
-  width: 50%;
-  margin: 10px;
+h4{
 
   margin-top: 20px;
+  background-color: rgb(103, 30, 171);
   font-size: 40px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
+  color: white;
+  text-align: center;
+  
+}
+input,li{
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 30px;
   color: white;
   text-align: center;
   border: 10px solid blueviolet;
   border-radius: 20px;
-  background-color: rgb(148, 63, 227);
+  background-color: rgb(103, 30, 171);
 }
-.in{
+li{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  border: 10px solid blueviolet;
+  border-radius: 20px;
+  background-color: rgb(103, 30, 171);
+}
+/* .in{
   display: inline-block;
   width: auto;
 
 
-}
+} */
 button{
-  /* justify-content: center;
-  align-items: center; */
-  display: block;
-  width: 25%;
+  display: inline-block;
+  color: white;
+  width: 15%;
   margin: auto;
-  margin-top: 20px;
-  height: 80px;
   font-size: 40px;
-  /* padding-top: 10px; */
-  color: red;
-  text-align: center;
-  border: 10px solid blueviolet;
-  border-radius: 20px;
-  background-color: black;
-}
+  background-color: rgb(3, 147, 27);
+  border-radius: 70px;
+  }
+.delete{
+  display: inline-block;
+  color: white;
+  width: 15%;
+  margin: auto;
+  font-size: 40px;
+  background-color: rgb(147, 3, 3);
+  border-radius: 70px;
+  }
