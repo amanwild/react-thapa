@@ -4,18 +4,20 @@ import React, { useState } from "react";
 
 
 const App=() => {
+    var T =new Date().toLocaleTimeString();
     const state = useState();
-    const [count,setCount]=useState(0);
+    const [time,setTime]=useState(T);
     
     const incNum =()=>{
+        var T =new Date().toLocaleTimeString();
     
-        console.log(count);
+        console.log(time);
         console.log("click");
-        setCount(count+1)
+        setTime(T)
     }
     return(
     <>
-        <h1>{count}</h1>
+        <h1>{time}</h1>
         <button onClick={incNum}>Click Me</button>
     </>);
 }
