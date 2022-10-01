@@ -8,17 +8,14 @@ const App=() => {
     const state = useState();
     const [time,setTime]=useState(T);
     
-    const incNum =()=>{
-        var T =new Date().toLocaleTimeString();
-    
-        console.log(time);
-        console.log("click");
+    const update =()=>{
+        T =new Date().toLocaleTimeString();
         setTime(T)
     }
+    setInterval(update,1000);
     return(
     <>
-        <h1>{time}</h1>
-        <button onClick={incNum}>Click Me</button>
+        <h1 >{T}</h1>
     </>);
 }
 export default App;
