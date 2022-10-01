@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "./Header";
-import List from "./List";
+import Calc from "./Calc";
 
 function App() {
     return(
 
     <>
         <Header />
-        <List />
+        <Calc />
     </>);
 }
 export default App;
