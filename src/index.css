@@ -18,6 +18,8 @@ h1{
   width: 50%;
   margin: auto;
   margin-top: 20px;
+  display: block;
+
   height: 80px;
   font-size: 40px;
   padding-top: 10px;
@@ -26,4 +28,37 @@ h1{
   border: 10px solid blueviolet;
   border-radius: 20px;
   background-color: rgb(148, 63, 227);
+}
+input{
+  /* justify-content: center;
+  align-items: center; */
+  width: 50%;
+  margin: auto;
+  display: block;
+
+  margin-top: 20px;
+  height: 80px;
+  font-size: 40px;
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+  border: 10px solid blueviolet;
+  border-radius: 20px;
+  background-color: rgb(148, 63, 227);
+}
+button{
+  /* justify-content: center;
+  align-items: center; */
+  display: block;
+  width: 25%;
+  margin: auto;
+  margin-top: 20px;
+  height: 80px;
+  font-size: 40px;
+  padding-top: 10px;
+  color: red;
+  text-align: center;
+  border: 10px solid blueviolet;
+  border-radius: 20px;
+  background-color: black;
 }

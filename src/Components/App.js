@@ -1,21 +1,41 @@
 import React, { useState } from "react";
-// import Header from "./Header";
-// import Calc from "./Calc";
+const App = () => {
+  const state = useState();
+  const [nameF, setNameF] = useState("");
+  const [nameL, setNameL] = useState("");
+  const [resfname, setfname] = useState("");
+  const [reslname, setlname] = useState("");
 
-
-const App=() => {
-    var T =new Date().toLocaleTimeString();
-    const state = useState();
-    const [time,setTime]=useState(T);
-    
-    const update =()=>{
-        T =new Date().toLocaleTimeString();
-        setTime(T)
-    }
-    setInterval(update,1000);
-    return(
+  const setnameF = (event) => {
+    setNameF(event.target.value);
+  };
+  const setnameL = (event) => {
+    setNameL(event.target.value);
+  };
+  const result = (e) => {
+    e.preventDefault();
+    setfname(nameF);
+    setlname(nameL);
+  };
+  return (
     <>
-        <h1 >{T}</h1>
-    </>);
-}
+      <div>
+      <form onSubmit={result}>
+        <h1> Hello {resfname} {reslname}</h1>
+        <input
+          type="text"
+          placeholder="First Name"
+          onChange={setnameF}
+        />
+        <input
+          type="text"
+          placeholder="Last Name"
+          onChange={setnameL}
+        />
+        <button type="submit" >Click me</button>
+        </form>
+      </div>
+    </>
+  );
+};
 export default App;
