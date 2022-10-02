@@ -3,9 +3,9 @@ const App = () => {
     const [first, setfirst] = useState(0)
     const [second, setsecond] = useState(0)
     //it will run whenever page will render
+    // var title = 'My Page Title'+{fir}
     useEffect(()=>{
-        console.log("Hello");
-        alert("Increamented")
+        document.title = `Clicked ${first} Times`;
     },[first])//this list is be key of this useEffect
     const inc =()=>{
         setfirst(first+1)
