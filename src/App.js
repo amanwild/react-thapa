@@ -1,21 +1,26 @@
-import React, { createContext } from "react";
-import C from "./Components/C";
-import B from "./Components/B";
-import A from "./Components/A";
-const fname = createContext(); 
-const lname = createContext();
+import React, { useEffect,useState } from "react";
 const App = () => {
+    const [first, setfirst] = useState(0)
+    const [second, setsecond] = useState(0)
+    //it will run whenever page will render
+    useEffect(()=>{
+        console.log("Hello");
+        alert("Increamented")
+    },[first])//this list is be key of this useEffect
+    const inc =()=>{
+        setfirst(first+1)
+    }
+    const incc =()=>{
+        setsecond(second+1)
+    }
   return (
     <>
-      <fname.Provider value={"Aman"}>
-      <lname.Provider value={"Sahu"}>
-        <A/>
-        <B/>
-        <C/>
-      </lname.Provider>
-      </fname.Provider>
+    <h1>{first}</h1>
+    <button onClick={inc}>inc</button>
+    <h1>{second}</h1>
+    <button onClick={incc}>incc</button>
+      
     </>
   );
 };
 export default App;
-export {fname,lname};
