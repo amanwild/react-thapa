@@ -18,13 +18,27 @@ code {
   margin: auto;
   margin-top: 20px;
   box-shadow: 1px 1px 15px rgb(56, 23, 87);
-  height: 800px;
-  width: 800px;
+  width: 45%;
   background-color: rgb(148, 63, 227);
   display: flexbox;
   justify-content: center;
   align-items: center;
 }
+.cards{
+  border: 10px solid blueviolet;
+  padding: 5px;
+  border-radius: 20px;
+  margin: auto;
+  height: auto;
+  margin-top: 20px;
+  box-shadow: 1px 1px 15px rgb(56, 23, 87);
+  width: 90%;
+  background-color: rgb(148, 63, 227);
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
+
 h1{
   align-items: center;
   width: auto;
@@ -47,17 +61,38 @@ h4{
   text-align: center;
   
 }
+
+h5{
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+#content{
+  margin-top: 10px;
+  font-size: 15px;
+  padding: 5px;
+  background-color: rgb(87, 15, 154);
+  border-radius: 15px;
+  
+}
+span{
+  text-align: center;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  
+}
 input,li{
   display: flexbox;
   justify-content: center;
   align-items: center;
   width: 70%;
-  margin: auto;
-  margin-top: 20px;
-  font-size: 30px;
+  margin: 10px;
+  font-size: 20px;
   color: white;
   text-align: center;
-  border: 10px solid blueviolet;
+  border: 3px solid rgb(78, 24, 130);
   border-radius: 20px;
   background-color: rgb(103, 30, 171);
 }
@@ -83,12 +118,7 @@ li{
 } */
 button{
   display: inline-block;
-  color: white;
-  width: 15%;
-  margin: auto;
-  font-size: 40px;
-  background-color: rgb(3, 147, 27);
-  border-radius: 70px;
+  margin: 10px;
   }
 .delete{
   display: inline-block;
