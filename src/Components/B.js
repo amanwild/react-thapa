@@ -1,23 +1,15 @@
-import React from "react";
-import {fname,lname} from "../App";
-function footer() {
-    
+import React, { useContext } from "react";
+import { fname, lname } from "../App";
+function B() {
+  const first = useContext(fname);
+  const second = useContext(lname);
   return (
     <>
-     <fname.Consumer>
-      {(fname)=>{
-        return(<lname.Consumer>
-        {(lname)=>{
-          return(<>
-
-          <h1>This is My {fname}{lname}</h1>
-          </>)
-        }}
-        </lname.Consumer>)
-      }}
-    </fname.Consumer>
+      <h1>
+        This is My {first} {second}
+      </h1>
     </>
   );
 }
 
-export default footer;
+export default B;

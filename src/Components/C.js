@@ -1,19 +1,15 @@
-import React from "react";
-import {fname,lname} from "../App";
+import React,{useContext} from "react";
+import { fname, lname } from "../App";
 function Header() {
-  return <div className="navbar sticky-top navbar-dark bg-dark">
-    <fname.Consumer>
-      {(fname)=>{
-        return(<lname.Consumer>
-        {(lname)=>{
-          return(<>
-            <h1> My Name is {fname} {lname}</h1>
-          </>)
-        }}
-        </lname.Consumer>)
-      }}
-    </fname.Consumer>
-  </div>;
+  const first = useContext(fname)
+  const second = useContext(lname)
+  return (
+    <div className="navbar sticky-top navbar-dark bg-dark">
+      <h1>
+        My Name is {first} {second}
+      </h1>
+    </div>
+  );
 }
 
 export default Header;

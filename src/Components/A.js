@@ -1,22 +1,13 @@
-import React from "react";
-import {fname,lname} from "../App";
-function CreateNote(props) {
-  
+import React,{useContext} from "react";
+import { fname, lname } from "../App";
+function CreateNote() {
+  const fnameval = useContext(fname)
+  const lnameval = useContext(lname)
   return (
     <>
-      <fname.Consumer>
-      {(fname)=>{
-        return(<lname.Consumer>
-        {(lname)=>{
-          return(<>
-          <h2>This is My  {fname} {lname}</h2>
-
-          </>)
-        }}
-        </lname.Consumer>)
-      }}
-
-      </fname.Consumer>
+      <h2>
+        This is My {fnameval} {lnameval}
+      </h2>
     </>
   );
 }
