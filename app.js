@@ -16,6 +16,9 @@ app.get('/singin',(req,res)=>{
 app.get('/singup',(req,res)=>{
     res.send(`This is singup`)
 })
+var cors = require('cors')
+
+app.use(cors()) // Use this after the variable declaration
 
 app.listen(3000,()=>{
         console.log(`Server is running at port http://localhost:3000`)

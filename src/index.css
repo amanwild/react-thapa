@@ -116,11 +116,17 @@ li{
 
 
 } */
-button{
+button ,select{
   display: inline-block;
   margin: 10px;
   }
-.delete{
+.delete ,select{
+  margin-top: 20px;
+  background-color: rgb(103, 30, 171);
+  font-size: 40px;
+  /* padding-top: 10px; */
+  color: white;
+  text-align: center;
   display: inline-block;
   color: white;
   width: 15%;
