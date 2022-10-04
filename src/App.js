@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Contact from "./Components/Contact";
 import Home from "./Components/Home";
-import Services from "./Components/Services";
 import User from "./Components/User";
-import About from "./Components/About";
 import Error from "./Components/Error";
+// import About from "./Components/About";
+// import Services from "./Components/Services";
 const App = () => {
   return (
     <>
@@ -16,11 +16,16 @@ const App = () => {
         <Routes>
           {/* exact is used for exact path */}
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About name="Aman" sname="Sahu"/>} />
-          <Route exact path="/user" element={<User />} />
-          <Route exact path="/services" element={<Services />} />
-          <Route exact path="/contact" element={<Contact />} />
+          {/* <Route exact path="/about" element={<About name="Aman" sname="Sahu"/>} /> */}
+          {/* <Route exact path="/services" element={<Services />} />*/}
           <Route path="*" element={<Error />} />
+          
+          {/* after "http://localhost:3000/user" type "/aman" */}
+          <Route path="/user/:name" element={<User />} />
+
+          {/* after "http://localhost:3000/contact" type "/aman/sahu" */}
+          <Route exact path="/contact/:name/:sname" element={<Contact />} /> 
+          
         </Routes>
       </Router>
     </>

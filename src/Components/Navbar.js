@@ -12,11 +12,14 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-              <li className="nav-item mx-2" >
+              {/* <li className="nav-item mx-2" >
                 <Link className="nav-link" to="/about">
                   About
                 </Link>
-              </li>
+              </li> */}
+
+              {/* after "http://localhost:3000/user" type "/aman" */}
+
               <li className="nav-item mx-2" >
                 <Link className="nav-link" to="/user">
                   User
@@ -27,11 +30,11 @@ const Navbar = () => {
                   Contact
                 </Link>
               </li>
-              <li className="nav-item mx-2" >
+              {/* <li className="nav-item mx-2" >
                 <Link className="nav-link" to="/services">
                   Services
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
