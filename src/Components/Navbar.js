@@ -1,6 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+//useHistory is changed in V6 to useNavigate
+
+import {useNavigate } from 'react-router-dom'
+
 const Navbar = () => {
+  const navigate = useNavigate();
+    console.log(navigate)
+
   return (
     <div>
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -36,6 +43,10 @@ const Navbar = () => {
                 </Link>
               </li> */}
             </ul>
+            
+            {/* //navigate(-1) is use to go back to previous page */}
+
+            <button onClick={() => navigate(-1)}>Go back</button><button onClick={() => navigate(1)}>Go forward</button>
           </div>
         </div>
       </nav>
