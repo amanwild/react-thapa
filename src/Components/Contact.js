@@ -6,7 +6,7 @@ const Contact = () => {
   const Location = useLocation();
 
   return (
-<>    <h2 style={{ margin: "150px 0px" }} className="text-center" >
+<>    <h2 style={{ margin: "80px 0px 0px 0px" }} className="text-center" >
         Welcome {name} {sname}
       </h2>
       <h2>My current Location is : {Location.pathname}</h2>

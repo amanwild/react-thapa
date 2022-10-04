@@ -11,7 +11,7 @@ const User = () => {
     alert(`Welcome ${name} to  ${Location.pathname}`)
   }
   return (
-<>    <h2 style={{ margin: "150px 0px" }} className="text-center" >
+<>    <h2  className="text-center" >
         User {name}
       </h2>
       <h2>My current Location is : {Location.pathname}</h2>
