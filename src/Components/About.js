@@ -1,8 +1,10 @@
 import React from 'react'
 
-const About = () => {
+const About = (props) => {
   return (
-<>    <h1>About</h1>
+<>    <h2 style={{ margin: "150px 0px" }} className="text-center" >
+        About {props.name} {props.sname}
+      </h2>
 </>  )
 }
 
