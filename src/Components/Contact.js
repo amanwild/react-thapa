@@ -1,13 +1,16 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams,useLocation } from 'react-router-dom'
 
 const Contact = () => {
   const {name ,sname}=useParams();
+  const Location = useLocation();
 
   return (
 <>    <h2 style={{ margin: "150px 0px" }} className="text-center" >
         Welcome {name} {sname}
       </h2>
+      <h2>My current Location is : {Location.pathname}</h2>
+
 </>  )
 }
 

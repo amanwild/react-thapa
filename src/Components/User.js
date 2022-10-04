@@ -1,12 +1,22 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams,useLocation } from 'react-router-dom'
 
 const User = () => {
-  const {name ,sname}=useParams();
+  const {name}=useParams();
+  //useLocation is used to get current Dynamic url  
+  const Location = useLocation();
+
+  const clicked=()=>{
+    alert(`Welcome ${name} to  ${Location.pathname}`)
+  }
   return (
 <>    <h2 style={{ margin: "150px 0px" }} className="text-center" >
-        User {name} {sname}
+        User {name}
       </h2>
+      <h2>My current Locationis : {Location.pathname}</h2>
+      {Location.pathname ===`/user/${name}`?
+      (<button onClick={clicked}>Click me</button>):null}
+
 </>  )
 }
 
