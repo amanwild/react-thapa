@@ -13,14 +13,20 @@ code {
     monospace;
 }
 .card{
-  border: 10px solid blueviolet;
+  /* border: 10px solid blueviolet; */
   border-radius: 20px;
   margin: auto;
   margin-top: 20px;
   box-shadow: 1px 1px 15px rgb(56, 23, 87);
-  width: 45%;
-  background-color: rgb(148, 63, 227);
+  width: auto;
+  height: auto;
+  /* background-color: rgb(148, 63, 227); */
   display: flexbox;
+  color: rgb(72, 17, 123);
+  font-size: larger;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
   justify-content: center;
   align-items: center;
 }

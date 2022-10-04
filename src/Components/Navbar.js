@@ -12,11 +12,15 @@ const Navbar = () => {
     <div>
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mx-2 mb-lg-0">
+            <ul className="navbar-nav me-auto ">
               <li className="nav-item  mx-2" >
                 <Link className="nav-link" aria-current="page" to="/">
                   Home
+                </Link>
+              </li>
+              <li className="nav-item mx-2" >
+                <Link className="nav-link" to="/search">
+                  Search
                 </Link>
               </li>
               {/* <li className="nav-item mx-2" >
@@ -27,27 +31,26 @@ const Navbar = () => {
 
               {/* after "http://localhost:3000/user" type "/aman" */}
 
-              <li className="nav-item mx-2" >
+              {/* <li className="nav-item mx-2" >
                 <Link className="nav-link" to="/user">
                   User
                 </Link>
-              </li>
-              <li className="nav-item mx-2" >
+              </li> */}
+              {/* <li className="nav-item mx-2" >
                 <Link className="nav-link" to="/contact">
                   Contact
                 </Link>
-              </li>
+              </li> */}
               {/* <li className="nav-item mx-2" >
                 <Link className="nav-link" to="/services">
                   Services
                 </Link>
               </li> */}
             </ul>
-            
+
             {/* //navigate(-1) is use to go back to previous page */}
 
             <button onClick={() => navigate(-1)}>Go back</button><button onClick={() => navigate(1)}>Go forward</button>
-          </div>
         </div>
       </nav>
     </div>
