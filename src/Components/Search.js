@@ -9,12 +9,12 @@ const Search = () => {
   };
   return (
     <>
-      <div className="container ">
-        <div style={{ margin: "80px 0px 0px 0px" }} className=" text-center  ">
-          <h3 className="bg-dark text-light p-2 rounded-4 d-inline align-items-center text-center">
-            Welcome to Search Menu
-          </h3>
-        </div>
+      <div className="my-3">
+        <h1 id="card" className="text-center border-2 my-4">
+          <strong className="brand-name"> Welcome to Search Menu</strong>
+        </h1>
+      </div>
+      <div className="container my-5">
         <div className="text-center   my-4 ">
           <input
             className=" border-top-0  bg-dark h4 p-2 rounded-4 border-light text-light"
@@ -23,8 +23,9 @@ const Search = () => {
             value={key}
           ></input>
         </div>
+        
         {key === "" ? null : <Sresult name={key} />}
-      </div>
+        </div>
     </>
   );
 };

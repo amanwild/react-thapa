@@ -1,10 +1,14 @@
 import React from 'react'
+import Common from './Common'
+import logo2 from "../Components/logo2.png"
 
 const About = (props) => {
   return (
-<>    <h2 style={{ margin: "80px 0px 0px 0px" }} className="text-center" >
-        About {props.name} {props.sname}
-      </h2>
+<>   <Common name ="We are Fine ,what about your"
+    message= "One apple Doctor Keeps away"
+    btn="More info"
+    btnurl="/services"
+    logo ={logo2}></Common>
 </>  )
 }
 

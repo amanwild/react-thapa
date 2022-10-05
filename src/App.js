@@ -5,6 +5,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
 import Navbar from "./Components/Navbar";
 import Contact from "./Components/Contact";
 import Home from "./Components/Home";
+import Footer from "./Components/Footer";
 import Search from "./Components/Search";
 import User from "./Components/User";
 import Error from "./Components/Error";
@@ -30,6 +31,7 @@ const App = () => {
           <Route exact path="/contact/:name/:sname" element={<Contact />} /> 
           
         </Routes>
+        <Footer/>
       </Router>
     </>
   );

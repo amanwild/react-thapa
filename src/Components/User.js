@@ -1,22 +1,16 @@
 import React from 'react'
-import { useParams,useLocation } from 'react-router-dom'
+import Common from './Common';
+import logo4 from "../Components/logo4.png"
 
 const User = () => {
-  const {name}=useParams();
-  //useLocation is used to get current Dynamic url  
-  const Location = useLocation();
-  console.log(Location)
 
-  const clicked=()=>{
-    alert(`Welcome ${name} to  ${Location.pathname}`)
-  }
   return (
-<>    <h2  className="text-center" >
-        User {name}
-      </h2>
-      <h2>My current Location is : {Location.pathname}</h2>
-      {Location.pathname ===`/user/${name}`?
-      (<button onClick={clicked}>Click me</button>):null}
+<>    <Common
+name ="Sir"
+    message= "Your data privacy is our first priority"
+    btn="Lock Now"
+    btnurl="/contact/aman/sahu"
+    logo ={logo4}></Common>
 
 </>  )
 }

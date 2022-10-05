@@ -1,11 +1,18 @@
-import React from 'react'
-
+import React from "react";
+import logo from "../Components/logo.png"
+import Common from "./Common";
 const Home = () => {
   return (
-<>    <h2 style={{ margin: "80px 0px 0px 0px" }} className="text-center" >
-        Welcome to Home
-      </h2>
-</>  )
-}
+    <> <Common 
+    name ="Aman Sahu"
+    message= "Welcome to our family"
+    btn="Join"
+    btnurl="/contact/aman/sahu"
+    logo ={logo}
 
-export default Home
+    ></Common>
+    </>
+  );
+};
+
+export default Home;
