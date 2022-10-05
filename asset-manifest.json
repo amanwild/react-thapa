@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-thapa/static/css/main.64f244a6.css",
+    "main.js": "/react-thapa/static/js/main.a1459d59.js",
+    "static/media/1.png": "/react-thapa/static/media/1.33b350b0a41a5e120bd4.png",
+    "static/media/2.png": "/react-thapa/static/media/2.7a3d05ddc8fc5e79e55e.png",
+    "static/media/logo.png": "/react-thapa/static/media/logo.d69dacd3976201d29bc3.png",
+    "static/media/logo1.png": "/react-thapa/static/media/logo1.633f73b1750448c61bdc.png",
+    "static/media/logo4.png": "/react-thapa/static/media/logo4.0c26334a416a5602872b.png",
+    "static/media/logo3.png": "/react-thapa/static/media/logo3.3e90ce9e86eabbd32cc3.png",
+    "static/media/logo2.png": "/react-thapa/static/media/logo2.91586d3e1b456ff6a569.png",
+    "index.html": "/react-thapa/index.html",
+    "main.64f244a6.css.map": "/react-thapa/static/css/main.64f244a6.css.map",
+    "main.a1459d59.js.map": "/react-thapa/static/js/main.a1459d59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64f244a6.css",
+    "static/js/main.a1459d59.js"
+  ]
+}
